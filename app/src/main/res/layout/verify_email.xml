@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/welcome_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/fab_margin"
+        android:textSize="@dimen/text_heading"
+        android:text="@string/welcome_demo_message"
+        />
+    <TextView
+        android:id="@+id/verify_email_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/fab_margin"
+        android:textSize="@dimen/text_heading"
+        android:text="@string/verify_email_message"/>
+    <Button
+        android:id="@+id/verify_email_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/verify_email_message"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/fab_margin"
+        android:elevation="4dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/verify_email"
+        />
+    <TextView
+        android:id="@+id/message_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/verify_email_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/fab_margin"
+        android:text="@string/verify_link_send"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>
